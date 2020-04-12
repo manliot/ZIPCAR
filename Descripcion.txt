@@ -1,0 +1,12 @@
+Reto: Desarrollo del landing page + Base de datos: Abril 17 de 2020. Qué desarrollar. La página de aterrizaje de uno de los dos ejemplos vistos en clase: Ifoodx ó ZipCar.
+
+RECOMENDACIONES
+
+    Utilizar: Algún framework basado en Bootstrap, IUmaterialize, IonicFramework (sencillamente basado en HTLM5, CSS, JS)
+    La plantilla seleccionada debe personalizarse de acuerdo al ejemplo seleccionado
+    Incorpore persiana o carrusel de imágenes
+    La plantilla a 3 columnas, Font 14puntos, colores balanceado suaves
+    deben incorporar 2 o 3 tablas p.j. usuario, reserva auto, factura del auto ó lo mimo para ifood
+    Puede utilizar cualquier BD Relacional o No Relacional
+    Por supuesto la data integrada a las funcionalidades al menos CRUD.
+    Finalmente pueden desplegarla en GITHUBIO o Netlify.com

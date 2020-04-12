@@ -5,8 +5,9 @@ export default class Login extends Component {
     render() {
         return (
             <div>
-                <p>this is login Page</p>
-                <Link to='/Home'> vamos a home</Link>
+                              
+                <Link to='/'> vamos a home</Link>
+              
             </div>
         )
     }
