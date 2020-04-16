@@ -1,5 +1,12 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 .navbar {
-    background-color: #b2ebf2;
-    height:  80px;
+    background-color: #02A8A8;
+    height: 80px;
+}
+
+#basic-navbar-nav .mr-auto .Nav-link{
+    color: #F6ECE9;
+}
+#basic-navbar-nav .mr-auto #basic-nav-dropdown{
+    color: #F6ECE9;
 }

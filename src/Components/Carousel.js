@@ -8,7 +8,7 @@ export default class Carouseli extends Component {
                     <Carousel.Item>
                         <img
                             className="d-block w-100"
-                            src="https://uninorte.edu.co/documents/10162/15243862/banner-yo-me+quedo-en-casa.png/3b283449-2f38-4b85-a5b8-2fa17666a459?t=1584649742253"
+                            src="yomequedoencasa.png"
                             alt="#YoMeQuedoEnCasa"
                         />
                         <Carousel.Caption>
