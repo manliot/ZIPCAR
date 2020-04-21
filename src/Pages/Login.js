@@ -32,26 +32,29 @@ export default class Login extends Component {
         this.setState({ encontro: false })
         this.state.users.map(users => {
             if (!this.state.encontro && users.usuario === this.state.usuario && users.contraseña === parseInt(this.state.contraseña)) {
-
-                alert('Bienveido')
-                window.location.href = 'http://localhost:3000/'
-                return true
                 this.setState({ encontro: true })
+               // window.location.href = 'http://localhost:3000/'
+                return true
             } else {
-                alert('Usuario y/o contraseña incorrecta')
+                return false
             }
             return null
         })
+        if (this.state.encontro) {
+            alert("Bienvenido")
+            window.location.href = 'http://localhost:3000/'
+        } else {
+            alert("usuario y/o contraseña incorrecta")
+        }
 
 
     }
     render() {
         return (
-            <div className="container" >
+            <div>
                 <div className="login-page" >
-                    
                     <div className="form">
-                    <h2 className="fs-title">Ingresa</h2>
+                        <h2 className="fs-title">Ingresa</h2>
                         <form className="login-form" onSubmit={this.onSubmitLogin}>
                             <input type="text" placeholder="Usuario" onChange={this.onChangeUsuario} />
                             <input type="password" placeholder="Contraseña" onChange={this.onChangeContraseña} />
