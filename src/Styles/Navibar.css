@@ -1,12 +1,22 @@
 @import url('https://fonts.googleapis.com/css?family=Raleway&display=swap');
 .navbar {
-    background-color: #02A8A8;
+    background-color: #02a8a8;
     height: 80px;
 }
 
 #basic-navbar-nav .mr-auto .Nav-link{
-    color: #F6ECE9;
+    color: #000000;
+    margin: 0;
+    padding: 0;
+    font-family:  inherit ;
+    font-size: 16px;
+    line-height: 16px;
+    padding: 15px 10px 30px 15px;
+    font-weight: normal;
+    letter-spacing: 0.09em;
 }
-#basic-navbar-nav .mr-auto #basic-nav-dropdown{
-    color: #F6ECE9;
+#basic-nav-dropdown{
+    color: #46be3b;
 }
+
+

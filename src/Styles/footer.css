@@ -7,7 +7,7 @@ html, body {
   width: 100%;
   position: relative;
   height: auto;
-  background-color: #030214;
+  background-color: #4cbbb9;
 }
 
 .footer .col {
@@ -27,8 +27,9 @@ html, body {
   font-size: 12px;
   line-height: 17px;
   padding: 20px 0px 5px 0px;
-  color: rgba(255, 255, 255, 0.2);
+  color: rgb(255, 255, 255);
   font-weight: normal;
+  font-weight: bold;
   text-transform: uppercase;
   letter-spacing: 0.250em;
 }
@@ -40,10 +41,10 @@ html, body {
 }
 
 .footer .col ul li {
-  color: #999999;
+  color: #ffffff;
   font-size: 14px;
   font-family: inherit;
-  font-weight: bold;
+
   padding: 5px 0px 5px 0px;
   cursor: pointer;
   transition: .2s;
@@ -57,7 +58,7 @@ html, body {
 }
 
 .footer .col ul li:hover {
-  color: #ffffff;
+  color: #5e7c8d;
   transition: .1s;
   -webkit-transition: .1s;
   -moz-transition: .1s;
