@@ -47,7 +47,7 @@ export default class Login extends Component {
     }
     render() {
         return (
-            <div>
+            <div className="container" >
                 <div className="login-page" >
                     
                     <div className="form">

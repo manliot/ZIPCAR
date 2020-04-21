@@ -63,7 +63,7 @@ export default class Register extends Component {
         }
         const res = await axios.post('https://cioscar-backend.herokuapp.com/api/users/', newusuario);
        // console.log(res.data.messge)
-        if (res.data.messge == " Created user ") {
+        if (res.data.messge === " Created user ") {
             alert("Registro exitoso")
             window.location.href = 'http://localhost:3000/'
         }else{
