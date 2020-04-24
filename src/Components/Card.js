@@ -1,18 +1,17 @@
 import React, { Component } from 'react'
-import { Card, Button } from 'react-bootstrap'
+import { Link } from 'react-router-dom'
 import '../Styles/estiloDetalles2.css'
 
 export default class CardComponent extends Component {
     render() {
         return (
-            <div>
-                <Card border="dark" style={{ width: '18rem' }}>
-                    <Card.Img variant="top" src={this.props.src }/>
-                    <Card.Title>{this.props.titulo}</Card.Title>
-                    <Card.Text >{this.props.texto}</Card.Text>
-                    <Card.Body>
-                    </Card.Body>
-                </Card>
+            <div className="card" style={{ width: '18rem' }}>
+                <img src={this.props.src} className="card-img-top" alt="..." />
+                <div className="card-body">
+                    <h5 className="card-title">{this.props.titulo}</h5>
+                    <p className="card-text">{this.props.texto}</p>
+                    <Link to="#" className="btn btn-primary">Go!</Link>
+                </div>
             </div>
         )
     }

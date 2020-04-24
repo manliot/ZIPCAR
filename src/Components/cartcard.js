@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
-import { Card, Button } from 'react-bootstrap'
-import '../Styles/estiloDetalles2.css' 
+import { Card } from 'react-bootstrap'
+import '../Styles/estiloDetalles2.css'
 
 export default class CardcarComponent extends Component {
     render() {

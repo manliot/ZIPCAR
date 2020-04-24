@@ -9,7 +9,16 @@ import NFPage from './Pages/NotFoudPage'
 import C from './Components/cartcard'
 import Register from './Pages/Register'
 import Disponibles from './Pages/Disponibles'
-
+/* 
+=================================================================================
+En este archivo se definen todas las rutas de la siguiente manera;
+    si quiero ir a x ruta
+        1.importo el componente   (react component) 
+            import NameComponent from './ubicacion del js de xcomponent' 
+        2.defino de la siguiente manera que renderizar cuando visite tal ruta /x
+            <Route exact path='/x' component={NameComponent}
+===================================================================================
+*/
 export default class App extends Component {
     render() {
    

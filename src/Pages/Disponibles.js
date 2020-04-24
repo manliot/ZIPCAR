@@ -1,9 +1,9 @@
 import React, { Component } from 'react'
-import { Link } from 'react-router-dom'
 //aplicar estilos
 import axios from 'axios';
 import Cardc from '../Components/cartcard'
-import {  Container,Row, Col } from 'react-bootstrap'
+import { Container, Row, Col } from 'react-bootstrap'
+import Navjs from '../Components/Navbar'
 export default class Disponibles extends Component {
     constructor() {
         super()
@@ -21,6 +21,8 @@ export default class Disponibles extends Component {
     render() {
         return (
             <Container>
+
+                <Navjs />
                 {this.state.cars.map((c) => {
                     return (
                         <Row>

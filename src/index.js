@@ -1,6 +1,10 @@
 /**
  *********************************************************
  Este archivo contiene lo que se va a mostrar (App.js)
+ que contien todas las rutas de nuestra pagina.
+ ve a app.js y notaras que al iniciar se muestra HOME porque 
+ definimos que la ruta '/' iba a renderizar este componente 
+ react
  *********************************************************
  */ 
 

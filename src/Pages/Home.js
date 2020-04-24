@@ -4,11 +4,12 @@ import CarouselImages from '../Components/Carousel'
 import Footer from '../Components/Footer'
 import Card from '../Components/Card'
 import { Container, Row, Col } from 'react-bootstrap'
+
 export default class Home extends Component {
     render() {
         return (
             <div>
-                <Navjs />
+                <Navjs ></Navjs>
                 <CarouselImages />
                 <div className="container">
                     <h1></h1>
