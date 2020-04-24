@@ -21,17 +21,18 @@ export default class Disponibles extends Component {
     render() {
         return (
             <Container>
-
                 <Navjs />
-                {this.state.cars.map((c) => {
-                    return (
-                        <Row>
+                <Row>
+                    {this.state.cars.map((c) => {
+                        return (
+
                             <Col>
                                 <Cardc modelo={c.modelo} marca={c.marca} color={c.color} año={c.año} src={c.nombreImagen}></Cardc>
                             </Col>
-                        </Row>
-                    )
-                })}
+
+                        )
+                    })}
+                </Row>
             </Container >
         )
     }

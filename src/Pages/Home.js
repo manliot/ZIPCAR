@@ -12,7 +12,6 @@ export default class Home extends Component {
                 <Navjs ></Navjs>
                 <CarouselImages />
                 <div className="container">
-                    <h1></h1>
                     <h1>Como funcionamos</h1>
                 </div>
                 <Container>
@@ -23,8 +22,8 @@ export default class Home extends Component {
 
                         </Col>
                         <Col>
-                            <Card src="69325709-volante-icono-de-la-línea-del-vector-logotipo-de-carreras-de-coches-clases-de-conducir-firman-automóvil-i.jpg" 
-                            texto="Cuado ya tengas las llaves en tus manos podras movilizarte en nuestros lujosos autos."/>
+                            <Card src="69325709-volante-icono-de-la-línea-del-vector-logotipo-de-carreras-de-coches-clases-de-conducir-firman-automóvil-i.jpg"
+                                texto="Cuado ya tengas las llaves en tus manos podras movilizarte en nuestros lujosos autos." />
                         </Col>
                         <Col>
                             <Card src="descarga.jpg" texto=" Cuando haya terminado su tiempo de uso, se devolvera el auto en 
