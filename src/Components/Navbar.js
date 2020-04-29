@@ -26,7 +26,7 @@ export default class NavigatorBar extends Component {
                             </li>
 
                             <li className="nav-item">
-                                <Link className="Nav-link" to="/Precios">Precios</Link>
+                                <Link className="Nav-link" to="/RentarAuto">Precios</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="Nav-link" to="/Disponibles">Disponibles</Link>

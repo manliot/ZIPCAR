@@ -9,6 +9,7 @@ import NFPage from './Pages/NotFoudPage'
 import C from './Components/cartcard'
 import Register from './Pages/Register'
 import Disponibles from './Pages/Disponibles'
+import RentarAuto from './Pages/RentarAuto'
 /* 
 =================================================================================
 En este archivo se definen todas las rutas de la siguiente manera;
@@ -20,8 +21,7 @@ En este archivo se definen todas las rutas de la siguiente manera;
 ===================================================================================
 */
 export default class App extends Component {
-    render() {
-   
+    render() {   
         return (
             <BrowserRouter>
                 <Switch>
@@ -30,6 +30,7 @@ export default class App extends Component {
                     <Route exact path="/Register" component={Register} />
                     <Route exact path="/c" component={C} />
                     <Route exact path="/Disponibles" component={Disponibles} />
+                    <Route exact path="/RentarAuto" component={RentarAuto} />
                     <Route component={NFPage}/>                   
                 </Switch>
             </BrowserRouter>
