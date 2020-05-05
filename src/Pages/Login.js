@@ -2,7 +2,8 @@ import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
 import '../Styles/Login.css';
 import axios from 'axios';
-
+import Footer from '../Components/Footer'
+import Navjs from '../Components/Navbar'
 export default class Login extends Component {
     constructor() {
         super()
@@ -52,6 +53,7 @@ export default class Login extends Component {
     render() {
         return (
             <div>
+                <Navjs ></Navjs>
                 <div className="login-page" >
                     <div className="form">
                         <h2 className="fs-title">Ingresa</h2>
@@ -63,6 +65,7 @@ export default class Login extends Component {
                         </form>
                     </div>
                 </div>
+                <Footer />
             </div>
         )
     }
