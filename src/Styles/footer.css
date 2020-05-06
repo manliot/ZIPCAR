@@ -11,8 +11,8 @@ html, body {
 }
 
 .footer .col {
-  width: 300px;
-  height: auto;
+  width:  300px;
+  height: 150px;
   float: left;
   box-sizing: border-box;
   -webkit-box-sizing: border-box;

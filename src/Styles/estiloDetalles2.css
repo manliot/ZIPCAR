@@ -1,9 +1,24 @@
-.card {	
-	border-radius: 60px;
+.card {
+	border-radius: 10px;
 	margin-top: 20px;
-	
+	background: linear-gradient(to left, rgb(250, 148, 53), rgb(250, 148, 53));
+	font-family: inherit;
 }
-.card-img-top{
-	border-top-right-radius: 60px;
-	border-top-left-radius: 60px;
+
+.card-img-top {
+	border-top-right-radius: 10px;
+	border-top-left-radius: 10px;
+}
+
+.card-body_ {
+	padding-left: 30px;
+	padding-right: 10px;
+	background-color: aliceblue;
+}
+#imagenefecto{
+	margin-left: -20px;
+	margin-top: -5px;
+}
+.contenedor{
+	margin-bottom: 50;
 }

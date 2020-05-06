@@ -5,12 +5,11 @@ import '../Styles/estiloDetalles2.css'
 export default class CardComponent extends Component {
     render() {
         return (
-            <div className="card" style={{ width: '18rem' }}>
+            <div className="card" style={{ width: '18rem' ,height: '24rem'}}>
                 <img src={this.props.src} className="card-img-top" alt="..." />
-                <div className="card-body">
+                <div className="card-body_">
                     <h5 className="card-title">{this.props.titulo}</h5>
-                    <p className="card-text">{this.props.texto}</p>
-                    <Link to="#" className="btn btn-primary">Go!</Link>
+                    <p className="card-text">{this.props.texto}</p>                 
                 </div>
             </div>
         )
