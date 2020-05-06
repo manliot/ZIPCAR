@@ -1,0 +1,17 @@
+.contenedor{
+    flex-direction: column;
+    flex:1;
+    justify-content: center;
+}
+.registrate{   
+    flex:1;
+    padding-top: -100px;
+}
+.h1{
+   
+    flex:1;
+}
+.contenedor2{
+    justify-content: flex-start;
+    align-items: flex-start;
+}
