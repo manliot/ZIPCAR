@@ -2,8 +2,10 @@ import React, { Component } from 'react'
 //aplicar estilos
 import axios from 'axios';
 import Cardc from '../Components/cartcard'
-import { Container, Row, Col } from 'react-bootstrap'
 import Navjs from '../Components/Navbar'
+import Footer from '../Components/Footer'
+import { Container, Row, Col } from 'react-bootstrap'
+
 export default class Disponibles extends Component {
     constructor() {
         super()
@@ -20,20 +22,23 @@ export default class Disponibles extends Component {
 
     render() {
         return (
-            <Container>
-                <Navjs />
+            <div>
+                <Navjs ></Navjs>
+              <Container>
                 <Row>
                     {this.state.cars.map((c) => {
                         return (
 
                             <Col>
-                                <Cardc modelo={c.modelo} marca={c.marca} color={c.color} año={c.año} src={c.nombreImagen}></Cardc>
+                                <Cardc  modelo={c.modelo} marca={c.marca} color={c.color} año={c.año} src={c.nombreImagen}></Cardc>
                             </Col>
 
                         )
                     })}
                 </Row>
-            </Container >
+               </Container >
+               <Footer/>
+         </div>
         )
     }
 }
