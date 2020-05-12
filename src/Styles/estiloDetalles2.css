@@ -21,4 +21,12 @@
 }
 .contenedor{
 	margin-bottom: 50;
+	display: inherit;
+    justify-content: inherit;
+    height: inherit;
+    align-items: inherit;
+    max-width: 1000px;
+    flex: 1;
+    margin: 0 auto;
+    flex-wrap: inherit;
 }

@@ -11,34 +11,32 @@ export default class Home extends Component {
     render() {
         return (
             <div>
-                <Navjs ></Navjs>               
+                <Navjs ></Navjs>                
                 <div className='contenedor'>
-                    <img src={require("../Images/efecto.png")} height={170} width={2000} id='imagenefecto' />
-                    <Registrate/>
+                    <Registrate />
                     <div className="card-body">
                         <h1 className="text-center">¿Como funcionamos?</h1>
                     </div>
-                    
-                    <Container >
-                        <Row>
-                            <Col>
-                                <Card src="190524002834-20190524-boss-texting-super-tease.jpg" texto="Al unirte a nuestra comunidad, te enviaremos un 
-                            correo si tu solicitud fue aprovada." height="100" />
-                            </Col>                          
-                            <Col>
-                                <Card src="69325709-volante-icono-de-la-línea-del-vector-logotipo-de-carreras-de-coches-clases-de-conducir-firman-automóvil-i.jpg"
-                                    texto="Cuando ya tengas las llaves en tus manos podras movilizarte en nuestros lujosos autos." />
-                            </Col>                          
-                            <Col>
-                                <Card src="descarga.jpg" texto=" Cuando se termine el tiempo, se devolvera el auto en 
-                            uno algun punto de entrega."/>
-                            </Col>
-                        </Row>
-                    </Container>
                 </div>
+                <Container >
+                    <Row>
+                        <Col>
+                            <Card src="190524002834-20190524-boss-texting-super-tease.jpg" texto="Al unirte a nuestra comunidad, te enviaremos un 
+                            correo si tu solicitud fue aprovada." height="100" />
+                        </Col>
+                        <Col>
+                            <Card src="69325709-volante-icono-de-la-línea-del-vector-logotipo-de-carreras-de-coches-clases-de-conducir-firman-automóvil-i.jpg"
+                                texto="Cuando ya tengas las llaves en tus manos podras movilizarte en nuestros lujosos autos." />
+                        </Col>
+                        <Col>
+                            <Card src="descarga.jpg" texto=" Cuando se termine el tiempo, se devolvera el auto en 
+                            uno algun punto de entrega."/>
+                        </Col>
+                    </Row>
+                </Container>
                 <Footer />
             </div>
         )
-    } 
+    }
 }
 

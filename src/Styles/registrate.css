@@ -1,17 +1,31 @@
-.contenedor{
-    flex-direction: column;
-    flex:1;
-    justify-content: center;
+.contenedorr {
+    display: flex;
+    height: inherit;
+    max-width: 1000px;
+    flex: 1;
+    margin: 0 auto;
+    flex-wrap: inherit;
 }
-.registrate{   
-    flex:1;
+
+.registrate {
+    flex: 1;
     padding-top: -100px;
 }
-.h1{
-   
-    flex:1;
+
+.h1 {
+    text-align: center;
+    flex: 1;
 }
-.contenedor2{
+
+.Parrafo_bienvenida {
+    text-align: center;
+    width: 50%;
+    justify-content: center;
+    align-items: center;
+}
+
+.contenedor2 {
+    width: 50%;
     justify-content: flex-start;
     align-items: flex-start;
 }

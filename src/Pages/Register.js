@@ -72,8 +72,7 @@ export default class Register extends Component {
 
     }
     render() {
-        return (
-            
+        return (            
                 <div className="login-page" >
                     <div className="form">
                         <h2 className="fs-title">Registrate</h2>

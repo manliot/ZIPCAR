@@ -33,9 +33,9 @@ export default class NavigatorBar extends Component {
                             </li>
                             <li className="nav-item dropdown">
                                 <NavDropdown title="Servicios" id="navbarDropdown">
-                                    <NavDropdown.Item href="#action/3.1">Ciao Car</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.1">Zipcar</NavDropdown.Item>
-                                    <NavDropdown.Item href="#action/3.1">CarterAPP</NavDropdown.Item>
+                                    <NavDropdown.Item href="https://github.com/manliot/ZIPCAR">Ciao Car</NavDropdown.Item>
+                                    <NavDropdown.Item href="https://www.zipcar.com/">Zipcar</NavDropdown.Item>
+                                    <NavDropdown.Item href="https://github.com/manliot/CarterApp">CarterAPP</NavDropdown.Item>
                                 </NavDropdown>
                             </li>
                         </ul>
@@ -55,6 +55,7 @@ export default class NavigatorBar extends Component {
                         </ul>
                     </div>
                 </nav>
+                <img src={require("../Images/efecto.png")} height={170} width={2000} id='imagenefecto' />
             </div>
         )
     }
