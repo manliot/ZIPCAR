@@ -55,7 +55,8 @@ export default class NavigatorBar extends Component {
                         </ul>
                     </div>
                 </nav>
-                <img src={require("../Images/efecto.png")} height={170} width={2000} id='imagenefecto' />
+               
+                <img src={require("../Images/efecto.png")} height={170} id='imagenefecto' />
             </div>
         )
     }
