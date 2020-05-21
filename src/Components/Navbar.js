@@ -31,6 +31,9 @@ export default class NavigatorBar extends Component {
                             <li className="nav-item">
                                 <Link className="Nav-link" to="/Disponibles">Disponibles</Link>
                             </li>
+                            <li className="nav-item">
+                                <Link className="Nav-link" to="#comotrabajamos">¿Como trabajamos?</Link>
+                            </li>
                             <li className="nav-item dropdown">
                                 <NavDropdown title="Servicios" id="navbarDropdown">
                                     <NavDropdown.Item href="https://github.com/manliot/ZIPCAR">Ciao Car</NavDropdown.Item>

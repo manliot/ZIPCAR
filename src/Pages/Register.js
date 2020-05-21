@@ -86,8 +86,7 @@ export default class Register extends Component {
                             <p className="message">Ya estas registrado <Link to="/Login">Log in</Link></p>
                         </form>
                     </div>
-                </div>
-          
+                </div>          
         )
     }
 }

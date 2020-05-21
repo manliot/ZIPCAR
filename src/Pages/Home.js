@@ -18,7 +18,7 @@ export default class Home extends Component {
                         <h1 className="text-center">¿Como funcionamos?</h1>
                     </div>
                 </div>
-                <Container >
+                <Container id="comotrabajamos">
                     <Row>
                         <Col>
                             <Card src="190524002834-20190524-boss-texting-super-tease.jpg" texto="Al unirte a nuestra comunidad, te enviaremos un 
