@@ -1,31 +1,55 @@
 .contenedorr {
     display: flex;
     height: inherit;
-    max-width: 1000px;
+   padding-right: 100px;
+   padding-left: 100px;
     flex: 1;
     margin: 0 auto;
     flex-wrap: inherit;
+   
 }
 
 .registrate {
-    flex: 1;
+    flex: 2;
     padding-top: -100px;
 }
 
 .h1 {
-    text-align: center;
+    
     flex: 1;
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+}
+.h2{
+   
+    font-size: 20px;
+    font-weight: 700;
+    line-height: 32px;
+    margin-top: 1.75rem;
+    cursor: pointer;
+   
+    color: #262b33;
+    border: none;
+    border-radius: 4px;
+    outline: none;
 }
 
 .Parrafo_bienvenida {
-    text-align: center;
-    width: 50%;
-    justify-content: center;
-    align-items: center;
+    text-align: left;
+    width: 40%;
+    margin-left: 100px;
+   
 }
 
 .contenedor2 {
-    width: 50%;
+    width: 60%;
     justify-content: flex-start;
     align-items: flex-start;
+    height: 940px;
+   
+}
+#titulo{
+    margin-bottom: 10px;
 }
