@@ -3,6 +3,9 @@
 	margin-top: 20px;
 	background: linear-gradient(to left, rgb(250, 148, 53), rgb(250, 148, 53));
 	font-family: inherit;
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 .card-img-top {
 	border-top-right-radius: 10px;
@@ -10,9 +13,11 @@
 }
 
 .card-body_ {
-	padding-left: 30px;
+	padding-left: 50px;
 	padding-right: 10px;
 	background-color: aliceblue;
+	flex:1;
+	padding-top: -10px;
 }
 #imagenefecto{
 	margin-left: -20px;

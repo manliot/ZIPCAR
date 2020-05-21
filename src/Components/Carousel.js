@@ -6,7 +6,7 @@ export default class Carouseli extends Component {
             <div>
                 <Carousel>
                     <Carousel.Item>   
-                         <img style={{'height':"500px", 'weight':"100px"}}  
+                         <img style={{'height':"328px", 'weight':"100%"}}  
                             className="d-block w-100"
                             src="yomequedoencasa.png"
                             alt="#YoMeQuedoEnCasa"
@@ -17,24 +17,14 @@ export default class Carouseli extends Component {
                         </Carousel.Caption>
                     </Carousel.Item>
                     <Carousel.Item>
-                    <img style={{'height':"500px" , 'weight':"100px"}} 
+                    <img style={{'height':"328px" , 'weight':"100%"}} 
                             className="d-block w-100"
-                            src="kia_niro_emotion_2019_a.jpg"
+                            src="uno.jpg"
                             alt="zipcar"
                         />
                     </Carousel.Item>
-                    <Carousel.Item>
-                    <img style={{'height':"500px" , 'weight':"10px"}} 
-                            className="d-block w-100"
-                            src="carro-hibrido-900x500.jpg"
-                            alt="zipcar"
-                        />
-                    </Carousel.Item>
-                    <img style={{'height':"500px" , 'weight':"10px"}} 
-                            className="d-block w-100"
-                            src="above-the-fold.jpg"
-                            alt="zipcar"
-                        />
+                   
+                   
                 </Carousel>
             </div>
         )

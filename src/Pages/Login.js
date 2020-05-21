@@ -8,10 +8,8 @@ export default class Login extends Component {
     constructor() {
         super()
         this.state = {
-            users: [],
             usuario: "",
             contraseña: "",
-            encontro: ""
         }
     }
     onChangeUsuario = (e) => {
@@ -24,31 +22,25 @@ export default class Login extends Component {
             contraseña: e.target.value
         })
     }
-    async componentDidMount() {
-        const res = await axios.get('https://cioscar-backend.herokuapp.com/api/users/');
-        this.setState({ users: res.data });
-    }
+
     onSubmitLogin = async e => {
         e.preventDefault();
-        this.setState({ encontro: false })
-        this.state.users.map(users => {
-            if (!this.state.encontro && users.usuario === this.state.usuario && users.contraseña === parseInt(this.state.contraseña)) {
-                this.setState({ encontro: true })
-               // window.location.href = 'http://localhost:3000/'
-                return true
-            } else {
-                return false
-            }
-            return null
-        })
-        if (this.state.encontro) {
-            alert("Bienvenido")
-            window.location.href = 'http://localhost:3000/'
-        } else {
-            alert("usuario y/o contraseña incorrecta")
+        const contraseña = Number(this.state.contraseña)
+        const DataUser = {
+            usuario: this.state.usuario,
+            contraseña: contraseña
         }
+        const res = await axios.post(`https://cioscar-backend.herokuapp.com/api/verifyuser/`, DataUser);
+        if (res.data.mensaje === "error usuario") {
+            alert("usuario no encontrado");
+        } else {
+            if (res.data.mensaje === "succesfull") {
+                alert('Ingreso exitoso')
+            } else {
+                alert('contraseña incorrecta');
 
-
+            }
+        }
     }
     render() {
         return (

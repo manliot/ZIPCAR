@@ -4,21 +4,22 @@ import Navjs from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import Card from '../Components/Card'
 import '../Styles/estiloDetalles2.css'
+import '../Styles/Home.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import Registrate from './Registrate'
 
 export default class Home extends Component {
     render() {
         return (
-            <div>
-                <Navjs ></Navjs>                
-                <div className='contenedor'>
+            <div className="contenedor_total">
+                <Navjs ></Navjs>
+                <div className='registro'>
                     <Registrate />
-                    <div className="card-body">
-                        <h1 className="text-center">¿Como funcionamos?</h1>
-                    </div>
                 </div>
-                <Container id="comotrabajamos">
+                <div className="card-body">
+                    <h1 className="text-center">¿Como funcionamos?</h1>
+                </div>
+                <Container >
                     <Row>
                         <Col>
                             <Card src="190524002834-20190524-boss-texting-super-tease.jpg" texto="Al unirte a nuestra comunidad, te enviaremos un 
