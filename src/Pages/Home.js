@@ -4,20 +4,21 @@ import Navjs from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import Card from '../Components/Card'
 import '../Styles/estiloDetalles2.css'
+import '../Styles/Home.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import Registrate from './Registrate'
 
 export default class Home extends Component {
     render() {
         return (
-            <div>
+            <div className="contenedor_total">
                 <Navjs ></Navjs>                
-                <div className='contenedor'>
-                    <Registrate />
-                    <div className="card-body">
+                <div className='registro'>
+                    <Registrate/>                    
+                </div>
+                <div className="card-body">
                         <h1 className="text-center">¿Como funcionamos?</h1>
                     </div>
-                </div>
                 <Container >
                     <Row>
                         <Col>

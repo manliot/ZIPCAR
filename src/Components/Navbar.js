@@ -8,9 +8,9 @@ export default class NavigatorBar extends Component {
     render() {
         return (
             <div>
-                <nav className="navbar navbar-expand-lg ">
+                <nav className="navbar navbar-expand-lg">
                     <div aria-controls="basic-navbar-nav"></div>
-                    <Link className="navbar-brand" to="#">
+                    <Link className="navbar-brand" to="/">
                         <img src={require("../Images/LogoBordeOscuro.png")} height={70} width={75} />
                     </Link>
                     <button className="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
@@ -21,10 +21,7 @@ export default class NavigatorBar extends Component {
                             <li className="nav-item">
                                 <Link className="Nav-link" to="/QueesZipcar">¿Que es ZIPCAR? <span className="sr-only">(current)</span></Link>
                             </li>
-                            <li className="nav-item">
-                                <Link className="Nav-link" to="/">Home <span className="sr-only">(current)</span></Link>
-                            </li>
-
+                          
                             <li className="nav-item">
                                 <Link className="Nav-link" to="/RentarAuto">Precios</Link>
                             </li>
@@ -48,11 +45,7 @@ export default class NavigatorBar extends Component {
                                 <Link className="Nav-link" to="/Login">Login</Link>
                             </li>
                         </ul>
-                        <ul className="navbar-nav ">
-                            <li className="nav-item">
-                                <Link className="Nav-link" to="/Login">Join</Link>
-                            </li>
-                        </ul>
+                       
                     </div>
                 </nav>
                
