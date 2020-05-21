@@ -8,7 +8,10 @@ import '../Styles/Home.css'
 import { Container, Row, Col } from 'react-bootstrap'
 import Registrate from './Registrate'
 
-export default class Home extends Component {
+//para obtener el usuario que esta logeado
+import { connect } from 'react-redux'
+
+class Home extends Component {
     render() {
         return (
             <div className="contenedor_total">
@@ -40,4 +43,9 @@ export default class Home extends Component {
         )
     }
 }
-
+const mapStateToProps = (state) => {
+    return {
+        usuarioLog: state.usuarioLog,
+    }
+}
+export default connect(mapStateToProps)(Home);

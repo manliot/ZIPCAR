@@ -4,7 +4,12 @@ import '../Styles/Login.css';
 import axios from 'axios';
 import Footer from '../Components/Footer'
 import Navjs from '../Components/Navbar'
-export default class Login extends Component {
+import { connect } from 'react-redux';
+
+
+//se importan las accion para poner el usuario logeado como estado global
+import { Log_Usuario } from '../actions/acciones_usuario'
+class Login extends Component {
     constructor() {
         super()
         this.state = {
@@ -35,13 +40,15 @@ export default class Login extends Component {
             alert("usuario no encontrado");
         } else {
             if (res.data.mensaje === "succesfull") {
+                this.props.set_User_log(DataUser.usuario)
+                this.props.history.push('/')
                 alert('Ingreso exitoso')
             } else {
                 alert('contraseña incorrecta');
-
             }
         }
     }
+
     render() {
         return (
             <div>
@@ -62,3 +69,14 @@ export default class Login extends Component {
         )
     }
 }
+const mapStateToProps = (state) => {
+    return null
+}
+const mapDispathToProps = (dispath) => {
+    return {
+        set_User_log: (usuario) => {
+            return dispath(Log_Usuario(usuario))
+        }
+    }
+}
+export default connect(mapStateToProps, mapDispathToProps)(Login);
