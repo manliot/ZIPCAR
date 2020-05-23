@@ -56,7 +56,7 @@ class NavigatorBar extends Component {
 
                     </div>
                 </nav>
-                <img src={require("../Images/efecto.png")} height={600} id='imagenefecto' alt="efecto" />
+                <img src={require("../Images/efecto_2.png")} height={600} id='imagenefecto' alt="efecto" />
             </div>
         )
     }
