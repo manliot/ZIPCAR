@@ -3,6 +3,7 @@
   width: 360px;
   padding: 8% 0 0;
   margin: auto;
+  height: 600px;
 }
 
 .form {
@@ -26,6 +27,23 @@
   padding: 15px;
   box-sizing: border-box;
   font-size: 14px;
+}
+
+.contenix {
+  position: absolute;
+  top: 170px;
+}
+
+.navis {
+  position: absolute;
+}
+
+.contento {
+  position: relative;
+}
+
+#footei {
+  margin-top: 100px;
 }
 
 .form button {
@@ -68,4 +86,3 @@
   color: #2C3E50;
   margin-bottom: 10px;
 }
-

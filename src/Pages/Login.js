@@ -51,20 +51,23 @@ class Login extends Component {
 
     render() {
         return (
-            <div>
-                <Navjs ></Navjs>
-                <div className="login-page" >
-                    <div className="form">
-                        <h2 className="fs-title">Ingresa</h2>
-                        <form className="login-form" onSubmit={this.onSubmitLogin}>
-                            <input type="text" placeholder="Usuario" onChange={this.onChangeUsuario} />
-                            <input type="password" placeholder="Contraseña" onChange={this.onChangeContraseña} />
-                            <button type="submit">login</button>
-                            <p className="message">No estas registrado?<Link to="/Register">Crea una cuenta</Link></p>
-                        </form>
+            <div className='contenedor_total'>
+                <Navjs className='navis' ></Navjs>
+                <div className="subBody">
+                    <div className="login-page" >
+                        <div className="form">
+                            <h2 className="fs-title">Ingresa</h2>
+                            <form className="login-form" onSubmit={this.onSubmitLogin}>
+                                <input type="text" placeholder="Usuario" onChange={this.onChangeUsuario} />
+                                <input type="password" placeholder="Contraseña" onChange={this.onChangeContraseña} />
+                                <button type="submit">login</button>
+                                <p className="message">No estas registrado?<Link to="/Register">Crea una cuenta</Link></p>
+                            </form>
+                        </div>
                     </div>
+                    <Footer id="footei"/>
                 </div>
-                <Footer />
+                
             </div>
         )
     }

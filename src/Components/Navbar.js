@@ -1,6 +1,7 @@
 import React, { Component } from 'react'
 import { NavDropdown } from 'react-bootstrap';
 import { Link } from 'react-router-dom'
+
 import '../Styles/Navibar.css';
 
 import { connect } from 'react-redux'
@@ -18,7 +19,7 @@ class NavigatorBar extends Component {
                         <span className="navbar-toggler-icon"></span>
                     </button>
                     <div className="collapse navbar-collapse" id="navbarSupportedContent">
-                    <ul className="navbar-nav mr-auto">
+                        <ul className="navbar-nav mr-auto">
                             <li className="nav-item dropdown">
                                 <NavDropdown title="Informacion" id="navbarDropdown">
                                     <NavDropdown.Item href="/QueesZipcar">Que es Cioscar</NavDropdown.Item>
@@ -26,7 +27,7 @@ class NavigatorBar extends Component {
                                 </NavDropdown>
                             </li>
                             <li className="nav-item">
-                                <Link className="Nav-link" to="#precios">Precios</Link>
+                                <Link className="Nav-link" to="/Precios">Precios</Link>
                             </li>
                             <li className="nav-item">
                                 <Link className="Nav-link" to="/Disponibles">Disponibles</Link>
@@ -42,14 +43,25 @@ class NavigatorBar extends Component {
                         {this.props.usuarioLog === '' && (
                             <ul className="navbar-nav ">
                                 <li className="nav-item">
-                                    <Link className="Nav-link" to="/Login">Login</Link>
+                                    <button className='boton' onClick={() => { }}>
+                                        <Link className='LinkLog' to="/Login">Login</Link>
+                                    </button>
                                 </li>
                             </ul>
                         )}
                         {this.props.usuarioLog !== '' && (
                             <ul className="navbar-nav ">
+                                <li className="nav-item dropdown">
+                                    <NavDropdown title={this.props.usuarioLog} id="navbarDropdown">
+                                        <NavDropdown.Item href="https://github.com/manliot/ZIPCAR">P</NavDropdown.Item>
+                                        <NavDropdown.Item href="https://www.zipcar.com/">Autos Prestados</NavDropdown.Item>
+                                        <NavDropdown.Item href="https://github.com/manliot/CarterApp">CarterAPP</NavDropdown.Item>
+                                    </NavDropdown>
+                                </li>
                                 <li className="nav-item">
-                                    <Link className="Nav-link" to="/Login">{this.props.usuarioLog} Log out</Link>
+                                    <button className='boton' onClick={() => { }}>
+                                        <Link className="Nav-link" to="/Login">Log out</Link>
+                                    </button>
                                 </li>
                             </ul>
                         )}

@@ -13,11 +13,12 @@ import ReactDOM from 'react-dom'
 import App from './App'
 
 //redux para el estado global de la applicacion
-import { Provider} from 'react-redux'
+import { Provider } from 'react-redux'
 import { createStore } from 'redux'
 import Reducers from './Reducers'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 
 let store = createStore(Reducers)

@@ -1,35 +1,31 @@
 .contenedorr {
     display: flex;
-    height: inherit;
-   padding-right: 100px;
-   padding-left: 100px;
+    /*height: inherit;*/
+    padding-right: 100px;
+    padding-left: 100px;
     flex: 1;
-    margin: 0 auto;
-    flex-wrap: inherit;
-   
-}
-.registrate {
-    flex: 2;
-    padding-top: -100px;
 }
 
-.h1 {    
+.registrate {
+    flex: 2;
+}
+
+.h1 {
     flex: 1;
     font-size: 2.75rem;
     font-weight: 700;
     line-height: 3.5rem;
     margin-bottom: 1.5rem;
-    color: #262b33;
+    color: #fff;
 }
-.h2{
-   
+
+.h2 {
     font-size: 20px;
-    font-weight: 700;
+    font-weight: lighter;
     line-height: 32px;
     margin-top: 1.75rem;
     cursor: pointer;
-   
-    color: #262b33;
+    color: #fff;
     border: none;
     border-radius: 4px;
     outline: none;
@@ -38,17 +34,16 @@
 .Parrafo_bienvenida {
     text-align: left;
     width: 40%;
-    margin-left: 25px;
-   
+    margin-left: 100px;
 }
 
 .contenedor2 {
     width: 60%;
     justify-content: flex-start;
     align-items: flex-start;
-    height: 940px;
-   
+    margin-right: 100px;
 }
-#titulo{
+
+#titulo {
     margin-bottom: 10px;
 }

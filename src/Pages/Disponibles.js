@@ -5,6 +5,7 @@ import Cardc from '../Components/cartcard'
 import Navjs from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import { Container, Row, Col } from 'react-bootstrap'
+import '../Styles/Home.css'
 
 export default class Disponibles extends Component {
     constructor() {
@@ -22,23 +23,25 @@ export default class Disponibles extends Component {
 
     render() {
         return (
-            <div>
-                <Navjs ></Navjs>
-              <Container>
-                <Row>
-                    {this.state.cars.map((c) => {
-                        return (
-
-                            <Col>
-                                <Cardc  modelo={c.modelo} marca={c.marca} color={c.color} año={c.año} src={c.nombreImagen}></Cardc>
-                            </Col>
-
-                        )
-                    })}
-                </Row>
-               </Container >
-               <Footer/>
-         </div>
+            <div className='contenedor_total'>
+                <Navjs id='navibari'></Navjs>
+                <div className='subBody'>
+                    <div className='subsubbody'>
+                        <Container className='box' style={{marginRight:100}}>
+                            <Row>
+                                {this.state.cars.map((c) => {
+                                    return (
+                                        <Col>
+                                            <Cardc modelo={c.modelo} marca={c.marca} color={c.color} año={c.año} src={c.nombreImagen}></Cardc>
+                                        </Col>
+                                    )
+                                })}
+                            </Row>
+                        </Container >
+                    </div>
+                </div>
+                <Footer className='footerlx'/>
+            </div>
         )
     }
 }
