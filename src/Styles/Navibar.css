@@ -11,9 +11,17 @@
     font-family: "Roboto";
     font-size: 16px;
     line-height: 16px;
-    padding: 15px 10px 30px 15px;
+    padding: 8px 8px 8px 8px;
     font-weight: normal;
     letter-spacing: 0.09em;
+    text-decoration: none;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+}
+a:hover {
+    color: #9c9c9c;
+    text-decoration: none;
 }
 
 #navbarDropdown {
@@ -23,6 +31,8 @@
     line-height: 16px;
     font-weight: normal;
     letter-spacing: 0.09em;
+    justify-content: center;
+    
 }
 
 #boton-buscar_ {
@@ -80,4 +90,11 @@
 }
 #imagenefecto{
     width: 101.5%;
+}
+.nav-item{
+    list-style: none;
+}
+
+Link{
+    text-decoration: none;
 }

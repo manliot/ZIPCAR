@@ -4,8 +4,7 @@ export default class Carouseli extends Component {
     render() {
         return (
             <div>
-                <Carousel>
-                    
+                <Carousel>                    
                     <Carousel.Item>   
                          <img style={{'height':"328px", 'weight':"100%"}}  
                             className="d-block w-100"
@@ -26,9 +25,7 @@ export default class Carouseli extends Component {
                             src="eco.png"
                             alt="zipcar"
                         />
-                    </Carousel.Item>
-                   
-                   
+                    </Carousel.Item>  
                 </Carousel>
             </div>
         )
