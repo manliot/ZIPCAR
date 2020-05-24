@@ -1,6 +1,8 @@
 import React, { Component } from 'react'
 import { BrowserRouter, Route, Switch } from 'react-router-dom'
+
 import 'bootstrap/dist/css/bootstrap.min.css';
+
 
 //scenes
 import Login from './Pages/Login'
@@ -10,6 +12,8 @@ import C from './Components/cartcard'
 import Register from './Pages/Register'
 import Disponibles from './Pages/Disponibles'
 import RentarAuto from './Pages/RentarAuto'
+import Precios from "./Pages/Precios"
+
 /* 
 =================================================================================
 En este archivo se definen todas las rutas de la siguiente manera;
@@ -21,7 +25,7 @@ En este archivo se definen todas las rutas de la siguiente manera;
 ===================================================================================
 */
 export default class App extends Component {
-    render() {   
+    render() {
         return (
             <BrowserRouter>
                 <Switch>
@@ -31,7 +35,8 @@ export default class App extends Component {
                     <Route exact path="/c" component={C} />
                     <Route exact path="/Disponibles" component={Disponibles} />
                     <Route exact path="/RentarAuto" component={RentarAuto} />
-                    <Route component={NFPage}/>                   
+                    <Route exact path="/Precios" component={Precios} />
+                    <Route component={NFPage} />
                 </Switch>
             </BrowserRouter>
         )

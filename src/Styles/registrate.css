@@ -1,0 +1,52 @@
+.contenedorr {
+    display: flex;
+    /*height: inherit;*/
+    padding-right: 100px;
+    padding-left: 100px;
+    flex: 1;
+    margin-bottom: 300px;
+    
+}
+
+.registrate {
+    flex: 2;
+}
+
+.h1 {
+    flex: 1;
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: #fff;
+}
+
+.h2 {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 32px;
+    margin-top: 1.75rem;
+    cursor: pointer;
+    color: #fff;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.Parrafo_bienvenida {
+    text-align: left;
+    width: 40%;
+    margin-left: 100px;
+}
+
+.contenedor2 {
+    width: 60%;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-right: 100px;
+   
+}
+
+#titulo {
+    margin-bottom: 10px;
+}

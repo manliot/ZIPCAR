@@ -1,6 +1,6 @@
 import React, { Component } from 'react'
 import { Link } from 'react-router-dom'
-import '../Styles/Login.css';
+import '../Styles/register.css';
 import axios from 'axios';
 
 export default class Register extends Component {
@@ -72,8 +72,7 @@ export default class Register extends Component {
 
     }
     render() {
-        return (
-            <div>
+        return (            
                 <div className="login-page" >
                     <div className="form">
                         <h2 className="fs-title">Registrate</h2>
@@ -87,8 +86,7 @@ export default class Register extends Component {
                             <p className="message">Ya estas registrado <Link to="/Login">Log in</Link></p>
                         </form>
                     </div>
-                </div>
-            </div>
+                </div>          
         )
     }
 }

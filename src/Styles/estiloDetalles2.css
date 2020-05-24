@@ -1,24 +1,49 @@
 .card {
-	border-radius: 10px;
+	border-radius: 8px;
 	margin-top: 20px;
 	background: linear-gradient(to left, rgb(250, 148, 53), rgb(250, 148, 53));
-	font-family: inherit;
+	font-family: "Roboto";
+	display: flex;
+	align-items: center;
+	justify-content: center;
+}
+
+.card_ {
+	border-radius: 8px;
+	margin-top: 20px;
+	background: linear-gradient(to left, rgb(250, 148, 53), rgb(250, 148, 53));
+	font-family: "Roboto";
+	display: flex;
+	align-items: center;
+	justify-content: center;
 }
 
 .card-img-top {
-	border-top-right-radius: 10px;
-	border-top-left-radius: 10px;
+	border-top-right-radius: 8px;
+	border-top-left-radius: 8px;
 }
 
 .card-body_ {
-	padding-left: 30px;
+	padding-left: 50px;
 	padding-right: 10px;
 	background-color: aliceblue;
+	flex: 1;
+	padding-top: -10px;
 }
-#imagenefecto{
+
+#imagenefecto {
 	margin-left: -20px;
 	margin-top: -5px;
 }
-.contenedor{
+
+.contenedor {
 	margin-bottom: 50;
+	display: inherit;
+	justify-content: inherit;
+	height: inherit;
+	align-items: inherit;
+	max-width: 1000px;
+	flex: 1;
+	margin: 0 auto;
+	flex-wrap: inherit;
 }
