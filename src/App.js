@@ -13,6 +13,7 @@ import Register from './Pages/Register'
 import Disponibles from './Pages/Disponibles'
 import RentarAuto from './Pages/RentarAuto'
 import Precios from "./Pages/Precios"
+
 /* 
 =================================================================================
 En este archivo se definen todas las rutas de la siguiente manera;

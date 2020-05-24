@@ -4,6 +4,8 @@
     padding-right: 100px;
     padding-left: 100px;
     flex: 1;
+    margin-bottom: 300px;
+    
 }
 
 .registrate {
@@ -42,6 +44,7 @@
     justify-content: flex-start;
     align-items: flex-start;
     margin-right: 100px;
+   
 }
 
 #titulo {

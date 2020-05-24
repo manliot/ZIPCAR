@@ -5,7 +5,7 @@ import { Link } from 'react-router-dom'
 import '../Styles/Navibar.css';
 
 import { connect } from 'react-redux'
-
+import { Log_Usuario } from '../actions/acciones_usuario'
 class NavigatorBar extends Component {
     render() {
         return (
@@ -60,7 +60,7 @@ class NavigatorBar extends Component {
                                 </li>
                                 <li className="nav-item">
                                     <button className='boton' onClick={() => { }}>
-                                        <Link className="Nav-link" to="/Login">Log out</Link>
+                                        <Link className="Nav-link"  onClick={() => { this.props.set_User_log_out("")}}>Log out</Link>
                                     </button>
                                 </li>
                             </ul>
@@ -78,4 +78,11 @@ const mapStateToProps = (state) => {
         usuarioLog: state.usuarioLog,
     }
 }
-export default connect(mapStateToProps)(NavigatorBar)
+const mapDispathToProps = (dispath) => {
+    return {
+        set_User_log_out: (usuario) => {
+            return dispath(Log_Usuario(usuario))
+        }
+    }
+}
+export default connect(mapStateToProps, mapDispathToProps)(NavigatorBar)

@@ -31,14 +31,14 @@
     outline: none;
 }
 
-.Parrafo_bienvenida20 {
+.Parrafo_bienvenida {
     text-align: left;
     width: 40%;
-    margin-left: 10px;
+    margin-left: 100px;
 }
 
 .contenedor20 {
-    width: 650px;
+    width: 600px;
     height: 370px;
     justify-content: flex-start;
     align-items: flex-start;
@@ -65,4 +65,4 @@
 
 #titulo {
     margin-bottom: 10px;
-}
+} 

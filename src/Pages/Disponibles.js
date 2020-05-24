@@ -26,8 +26,8 @@ export default class Disponibles extends Component {
             <div className='contenedor_total'>
                 <Navjs id='navibari'></Navjs>
                 <div className='subBody'>
-                    <div className='subsubbody'>
-                        <Container className='box' style={{marginRight:100}}>
+                    <div className='subsubbody2' >
+                        <Container className='box' >
                             <Row>
                                 {this.state.cars.map((c) => {
                                     return (
@@ -39,8 +39,11 @@ export default class Disponibles extends Component {
                             </Row>
                         </Container >
                     </div>
+                    <div className='keren'>
+                        <Footer />
+                    </div>
                 </div>
-                <Footer className='footerlx'/>
+
             </div>
         )
     }

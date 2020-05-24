@@ -31,13 +31,17 @@ class Home extends Component {
                         }
 
                     </div>
-                    <div className="subsubbody">
-                        <div className="box">
+                    <div className="subsubbody" >
+                        <div className="box" >
                             <ComoFuncionamos />
                         </div>
                     </div>
-                    <Footer />
+                    <div className='keren'>
+                        <Footer />
+                    </div>
+
                 </div>
+
             </div>
         )
     }
