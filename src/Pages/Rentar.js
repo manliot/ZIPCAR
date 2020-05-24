@@ -1,19 +1,23 @@
 import React, { Component } from 'react'
+import { Link } from 'react-router-dom'
 
 export default class Rentar extends Component {
+    onSubmit= async e => {
+
+    }
     render() {
         return (
-            <div className="login-page" >
-                <div className="form">
-                    <h2 className="fs-title">Registrate</h2>
-                    <form className="login-form" onSubmit={this.onSubmitRegister}>
-                        <input type="text" placeholder="Nombre" onChange={this.onChangeNombre} />
-                        <input type="text" placeholder="Apellido" onChange={this.onChangeApellido} />
-                        <input type="text" placeholder="Usuario" onChange={this.onChangeUsuario} />
-                        <input type="password" placeholder="Contraseña" onChange={this.onChangeContraseña} />
-                        <input type="text" placeholder="Direccion" onChange={this.onChangeDireccion} />
-                        <button type="submit">Register</button>
-                        <p className="message">Ya estas registrado <Link to="/Login">Log in</Link></p>
+            <div class="login-page">
+                <div class="form">
+
+                    <form class="login-form" onSubmit={this.onSubmit}>
+                        <input type="text" placeholder="username< no se mostrara" />
+                        <input type="password" placeholder="fecha inicio" />
+                        <input type="password" placeholder="fecha fin" />
+                        <input type="password" placeholder="carro" />
+                        <input type="password" placeholder="id reserva < no se mostrara" />
+                        <button type="submit">Renta ahora</button>
+                        <p class="message">Not registered? <Link href="/Register">Create an account</Link></p>
                     </form>
                 </div>
             </div>
