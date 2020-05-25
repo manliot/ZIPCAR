@@ -4,11 +4,13 @@ import Cardc from '../Components/cartcard'
 import { Container, Row, Col } from 'react-bootstrap'
 import '../Styles/Home.css'
 
+
 export default class DIsponiblescomponent extends Component {
     constructor() {
         super()
         this.state = {
             cars: [],
+
         }
     }
 
@@ -17,19 +19,25 @@ export default class DIsponiblescomponent extends Component {
         this.setState({ cars: res.data });
         console.log(res.data)
     }
+    llenarcar(c) {
+        this.props.set_car_selected(c)
+        //alert(this.props.car_selected.placa)
+    }
     render() {
         return (
             <div>
                 <Container className='box' >
-                    <Row>
-                        {this.state.cars.map((c) => {
-                            return (
-                                <Col>
-                                    <Cardc modelo={c.modelo} marca={c.marca} color={c.color} año={c.año} src={c.nombreImagen}></Cardc>
-                                </Col>
-                            )
-                        })}
-                    </Row>
+                    {this.props.usuarioLog !== '' && (
+                        <Row>
+                            {this.state.cars.map((c) => {
+                                return (
+                                    <Col>
+                                        <Cardc key={c.placa} modelo={c.modelo} marca={c.marca} color={c.color} año={c.año} src={c.nombreImagen} placa={c.placa}></Cardc>
+                                    </Col>
+                                )
+                            })}
+                        </Row>
+                    )}
                 </Container >
             </div>
         )
