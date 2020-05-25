@@ -60,7 +60,7 @@ class NavigatorBar extends Component {
                                 </li>
                                 <li className="nav-item">
                                     <button className='boton' onClick={() => { }}>
-                                        <Link className='LinkLog' type="button" onClick={() => { this.props.set_User_log_out("")}}>Log out</Link>
+                                        <Link className="Nav-link"  type="button" onClick={() => { this.props.set_User_log_out("")}}>Log out</Link>
                                     </button>
                                 </li>
                             </ul>

@@ -4,27 +4,28 @@ export default class Carouseli extends Component {
     render() {
         return (
             <div>
-                <Carousel>
+                <Carousel>                    
                     <Carousel.Item>   
                          <img style={{'height':"328px", 'weight':"100%"}}  
                             className="d-block w-100"
-                            src="yomequedoencasa.png"
-                            alt="#YoMeQuedoEnCasa"
-                        />
-                        <Carousel.Caption>
-                            <h3>#YoMeQuedoEnCasa</h3>
-                            <h3>#Uninorte</h3>
-                        </Carousel.Caption>
+                            src="100.png"
+                            alt="#Y100"
+                        />                    
                     </Carousel.Item>
                     <Carousel.Item>
                     <img style={{'height':"328px" , 'weight':"100%"}} 
                             className="d-block w-100"
-                            src="uno.jpg"
+                            src="precios_bajos.gif"
                             alt="zipcar"
                         />
                     </Carousel.Item>
-                   
-                   
+                    <Carousel.Item>
+                    <img style={{'height':"328px" , 'weight':"100%"}} 
+                            className="d-block w-100"
+                            src="eco.png"
+                            alt="zipcar"
+                        />
+                    </Carousel.Item>  
                 </Carousel>
             </div>
         )

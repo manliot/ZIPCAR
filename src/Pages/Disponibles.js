@@ -1,3 +1,4 @@
+
 import React, { Component } from 'react'
 //aplicar estilos
 import Navjs from '../Components/Navbar'
@@ -23,3 +24,4 @@ export default class Disponibles extends Component {
         )
     }
 }
+
