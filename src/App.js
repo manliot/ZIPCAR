@@ -3,7 +3,6 @@ import { BrowserRouter, Route, Switch } from 'react-router-dom'
 
 import 'bootstrap/dist/css/bootstrap.min.css';
 
-
 //scenes
 import Login from './Pages/Login'
 import Home from './Pages/Home'
