@@ -60,7 +60,7 @@ class NavigatorBar extends Component {
                                 </li>
                                 <li className="nav-item">
                                     <button className='boton' onClick={() => { }}>
-                                        <Link className="Nav-link"  type="button" onClick={() => { this.props.set_User_log_out("")}}>Log out</Link>
+                                        <Link className="Nav-link" type="button" onClick={() => { this.props.set_User_log_out("") }}>Log out</Link>
                                     </button>
                                 </li>
                             </ul>
@@ -69,7 +69,10 @@ class NavigatorBar extends Component {
                     </div>
                 </nav>
                 <img src={require("../Images/efecto_2.png")} height={600} id='imagenefecto' alt="efecto" />
-             
+                {this.props.home === "home" && (
+                    <img src={require("../Images/efe22.png")} height={1700} id='imagenefect' alt="efecto" />
+                )
+                }
             </div>
         )
     }

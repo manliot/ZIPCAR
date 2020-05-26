@@ -18,7 +18,7 @@ class Home extends Component {
         return (
             <div className="contenedor_total">
 
-                <Navjs id='navibari' ></Navjs>
+                <Navjs id='navibari' home={'home'}></Navjs>
                 <div className="subBody">
                     <div className='registro'>
                         {this.props.usuarioLog === '' && (
@@ -42,7 +42,7 @@ class Home extends Component {
                                 <ComoFuncionamos />
                             </div>
                         </div>
-                        <div className='keren'>
+                        <div className='keren2'>
                             <Footer />
                         </div>
                     </div>

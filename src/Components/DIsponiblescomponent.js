@@ -28,7 +28,7 @@ export default class DIsponiblescomponent extends Component {
             <div>
                 <Container className='box' >
                     {this.props.usuarioLog !== '' && (
-                        <Row>
+                        <Row style={{justifyContent:'center'}}>
                             {this.state.cars.map((c) => {
                                 return (
                                     <Col>

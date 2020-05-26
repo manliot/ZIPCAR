@@ -12,7 +12,7 @@ export default class Registrate extends Component {
                     <h1 className="h1" id="titulo">Vive una experiencia inimaginable con CiosCar!</h1>
                     <h2 className="h2">CiosCar es la plataforma de alquiler de autos mas usada en el mundo, contamos cientos de modelos para todos los gustos y estilos</h2>
                     <button className="button" >
-                        <Link to="/RentarAuto" className="Nav-link">Comenzar</Link>
+                        <Link to="/RentarAuto" className="Nav-link">Comenzar a rentar ya!</Link>
                     </button>
                 </div>
                 <div className="contenedor20">
