@@ -33,16 +33,18 @@ class Home extends Component {
                     </div>
                     <div className="subsubbody3" >
                         <div className="box" >
-                            <Que/>
+                            <div className='box_content_center'>
+                                <Que />
+                            </div>
                         </div>
                         <div className="box" >
                             <ComoFuncionamos />
                         </div>
                         <div className='keren'>
-                        <Footer />
+                            <Footer />
+                        </div>
                     </div>
-                    </div>
-                    
+
 
                 </div>
 

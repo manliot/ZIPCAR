@@ -42,6 +42,10 @@
     width: 100%;
 }
 
+.box_content_center {
+    padding: 80px 112px;
+}
+
 .box {
     background: #fff;
     border-radius: 8px;
@@ -53,4 +57,5 @@
     margin-left: 85px;
     box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.2), 0 5px 5px 0 rgba(0, 0, 0, 0.24);
     padding-bottom: 25px;
+    margin-bottom: 48px;
 }
