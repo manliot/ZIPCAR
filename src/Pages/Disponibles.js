@@ -9,7 +9,6 @@ import DispoCom from '../Components/DIsponiblescomponent'
 export default class Disponibles extends Component {
     render() {
         return (
-
             <div className='contenedor_total'>
                 <Navjs id='navibari'></Navjs>
                 <div className='subBody'>

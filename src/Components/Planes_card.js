@@ -16,6 +16,10 @@ export default class Planes_card extends Component {
         this.setState({ planes: res.data });
         console.log(res.data)
     }
+    llenarplan(c) {
+        this.props.set_plan_selected(c)
+        //alert(this.props.car_selected.placa)
+    }
     render() {
         return (
             <div className='subsubbody'>

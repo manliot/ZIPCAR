@@ -1,10 +1,8 @@
 import React, { Component } from 'react'
 import { Card } from 'react-bootstrap'
 import '../Styles/estiloDetalles2.css'
-
-
 import { connect } from 'react-redux'
-
+import Carplan from '../Components/Cardplan'
 //actions
 import { Car_selector } from '../actions/acciones_car'
 
@@ -19,7 +17,6 @@ class CardcarComponent extends Component {
             <div onClick={this.llenarcar.bind(this)}>
                 <Card className="card" border="info" style={{ width: '18rem' }}>
                     <Card.Img variant="top" src={this.props.src} />
-
                     <Card.Title className="text-center">{this.props.modelo}</Card.Title>
                     <Card.Text className="text-center">{this.props.marca}</Card.Text>
                     <Card.Text className="text-center">{this.props.modelo}</Card.Text>
@@ -29,6 +26,7 @@ class CardcarComponent extends Component {
                     <Card.Body>
                     </Card.Body>
                 </Card>
+                <Carplan></Carplan>
             </div>
         )
     }

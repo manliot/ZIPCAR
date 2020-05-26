@@ -1,6 +1,7 @@
 const initialState = {
     usuarioLog: '',
-    car_selected:''
+    car_selected: '',
+    plan_selected: ''
 }
 const Reducers = (state = initialState, action) => {
     switch (action.type) {
@@ -10,10 +11,15 @@ const Reducers = (state = initialState, action) => {
                 usuarioLog: action.usuario,
             }
         case 'CAR_SELECTED':
-            return{
+            return {
                 ...state,
                 car_selected: action.car,
-            }    
+            }
+        case 'PLAN_SELECTED':
+            return {
+                ...state,
+                plan_selected: action.plan,
+            }
         default:
             return state
     }
