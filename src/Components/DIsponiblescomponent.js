@@ -32,7 +32,7 @@ export default class DIsponiblescomponent extends Component {
                             {this.state.cars.map((c) => {
                                 return (
                                     <Col>
-                                        <Cardc key={c.placa} modelo={c.modelo} marca={c.marca} color={c.color} año={c.año} src={c.nombreImagen} placa={c.placa}></Cardc>
+                                        <Cardc key={c.placa} carro={c} modelo={c.modelo} marca={c.marca} color={c.color} año={c.año} src={c.nombreImagen} placa={c.placa}></Cardc>
                                     </Col>
                                 )
                             })}

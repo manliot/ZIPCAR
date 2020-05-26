@@ -5,6 +5,7 @@ export default class NotFoudPage extends Component {
         return (
             <div>
                 <h1>ZIPCAR Page not foud 404</h1>
+            
             </div>
         )
     }

@@ -1,0 +1,72 @@
+.contenedorr2 {
+    display: flex;
+    padding-right: 40px;
+    padding-left: 40px;
+    flex: 1;
+    margin-bottom: 300px;
+}
+
+.registrate2 {
+    flex: 2;
+}
+
+.card-body2 {
+    padding: 40px 10px 65px 10px
+}
+
+.h12 {
+    flex: 1;
+    font-size: 2.75rem;
+    font-weight: 700;
+    line-height: 3.5rem;
+    margin-bottom: 1.5rem;
+    color: #202124;
+}
+
+.h22 {
+    font-size: 20px;
+    font-weight: lighter;
+    line-height: 32px;
+    padding-left: 300px;
+    padding-right: 300px;
+    cursor: pointer;
+    color: #202124;
+    border: none;
+    border-radius: 4px;
+    outline: none;
+}
+
+.Parrafo_bienvenida2 {
+    text-align: left;
+    width: 40%;
+    margin-left: 100px;
+}
+
+.contenedor202 {
+    width: 600px;
+    height: 370px;
+    justify-content: flex-start;
+    align-items: flex-start;
+    margin-left: 60px;
+}
+
+.button2 {
+    font-family: "Roboto", sans-serif;
+    text-transform: uppercase;
+    outline: 0;
+    background: #df8d23;
+    width: 150px;
+    border: 0;
+    padding: 15px;
+    color: #FFFFFF;
+    font-size: 14px;
+    -webkit-transition: all 0.3 ease;
+    transition: all 0.3 ease;
+    cursor: pointer;
+    border-radius: 31px;
+    margin-top: 20px;
+}
+
+#titulo2 {
+    margin-bottom: 10px;
+}

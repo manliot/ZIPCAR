@@ -3,7 +3,7 @@ import Navjs from '../Components/Navbar'
 //import CarouselImages from '../Components/Carousel'
 import Footer from '../Components/Footer'
 import ComoFuncionamos from '../Components/ComoFuncionamos'
-
+import Que from '../Components/Que_es'
 import '../Styles/estiloDetalles2.css'
 import '../Styles/Home.css'
 
@@ -31,14 +31,18 @@ class Home extends Component {
                         }
 
                     </div>
-                    <div className="subsubbody" >
+                    <div className="subsubbody3" >
+                        <div className="box" >
+                            <Que/>
+                        </div>
                         <div className="box" >
                             <ComoFuncionamos />
                         </div>
-                    </div>
-                    <div className='keren'>
+                        <div className='keren'>
                         <Footer />
                     </div>
+                    </div>
+                    
 
                 </div>
 

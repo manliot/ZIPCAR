@@ -12,6 +12,8 @@ import Register from './Pages/Register'
 import Disponibles from './Pages/Disponibles'
 import RentarAuto from './Pages/RentarAuto'
 import Precios from "./Pages/Precios"
+import Select_plan from './Pages/select_plan'
+import RentarForm from './Pages/Rentar'
 
 /* 
 =================================================================================
@@ -35,6 +37,8 @@ export default class App extends Component {
                     <Route exact path="/Disponibles" component={Disponibles} />
                     <Route exact path="/RentarAuto" component={RentarAuto} />
                     <Route exact path="/Precios" component={Precios} />
+                    <Route exact path="/SelectPlan" component={Select_plan} />
+                    <Route exact path="/Rentar" component={RentarForm} />
                     <Route component={NFPage} />
                 </Switch>
             </BrowserRouter>

@@ -1,17 +1,17 @@
 import React, { Component } from 'react'
 //import '..Styles/RentarAuto.css'
-import Dispo from '../Components/DIsponiblescomponent'
+import Precios from '../Components/precios_component'
 import Navjs from '../Components/Navbar'
 import Footer from '../Components/Footer'
 import '../Styles/Home.css'
-export default class RentarAuto extends Component {
+export default class select_plan extends Component {
     render() {
         return (
             <div className='contenedor_total'>
                 <Navjs id='navibari'></Navjs>
                 <div className='subBody'>
                     <div className='subsubbody2' >
-                        < Dispo></Dispo>
+                        < Precios />
                     </div>
                     <div className='keren'>
                         <Footer />
