@@ -91,9 +91,9 @@
     text-transform: uppercase;
     outline: 0;
     background: #df8d23;
-    width: 150px;
+    width: 250px;
     border: 0;
-    padding: 15px;
+    padding: 5px;
     color: #FFFFFF;
     font-size: 14px;
     -webkit-transition: all 0.3 ease;
@@ -101,6 +101,13 @@
     cursor: pointer;
     border-radius: 31px;
     margin-top: 20px;
+}
+
+.pal {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
 #titulo2 {

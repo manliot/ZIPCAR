@@ -1,5 +1,6 @@
 import React, { Component } from 'react'
 import Card from '../Components/Card'
+
 import { Container, Row, Col } from 'react-bootstrap'
 export default class ComoFuncionamos extends Component {
     render() {

@@ -38,7 +38,9 @@ class Home extends Component {
                             </div>
                         </div>
                         <div className="box" >
-                            <ComoFuncionamos />
+                            <div className='box_content_center'>
+                                <ComoFuncionamos />
+                            </div>
                         </div>
                         <div className='keren'>
                             <Footer />
